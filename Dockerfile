@@ -10,7 +10,6 @@ RUN apt-get update && \
 # Install Node.js (required for Code Server)
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs
-    apt install systemctl -y
 
 # Install Code Server
 RUN curl -fsSL https://code-server.dev/install.sh | sh
